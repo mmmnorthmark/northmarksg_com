@@ -1,0 +1,655 @@
+
+
+
+
+/* #### RESET #### */
+
+html, body, div, ul, li, p, h1, h2, h3, h4, h5, h6, label, input, blockquote { 
+   margin:0;
+   padding:0;
+   font-size: 100%;
+   line-height: normal;
+   border: none;
+   outline: none; 
+   }
+   
+img {outline: none; border: none;}
+
+ul, li { list-style: none; }
+
+a {text-decoration:none;}
+
+
+
+
+/* #### EMBED FONTS #### */
+
+
+
+
+@font-face {
+    font-family: 'MuseoSans500';
+    src: url('fonts/museosans_500.eot');
+    src: url('fonts/museosans_500.eot?#iefix') format('embedded-opentype'),
+         url('fonts/museosans_500.woff') format('woff'),
+         url('fonts/museosans_500.ttf') format('truetype'),
+         url('fonts/museosans_500.svg#MuseoSans500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaLt';
+    src: url('fonts/helvetica_lt.eot');
+    src: url('fonts/helvetica_lt.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helvetica_lt.woff') format('woff'),
+         url('fonts/helvetica_lt.ttf') format('truetype'),
+         url('fonts/helvetica_lt.svg#HelveticaLt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaStd';
+    src: url('fonts/helvetica_std.eot');
+    src: url('fonts/helvetica_std.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helvetica_std.woff') format('woff'),
+         url('fonts/helvetica_std.ttf') format('truetype'),
+         url('fonts/helvetica_std.svg#HelveticaStd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaMed';
+    src: url('fonts/helvetica_med.eot');
+    src: url('fonts/helvetica_med.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helvetica_med.woff') format('woff'),
+         url('fonts/helvetica_med.ttf') format('truetype'),
+         url('fonts/helvetica_med.svg#HelveticaMed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+/* #### BASE TYPOGRAPHIC STYLES #### */
+
+
+
+
+h1 {
+   font: 29px/34px 'HelveticaLt', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+   font: 21px/.8 'HelveticaMed', Arial, Helvetica, sans-serif;
+   color: #463a1f;
+}
+
+h3 {
+   font: 18px/1 'HelveticaMed', Arial, Helvetica, sans-serif;
+   color: #463a1f;
+}
+
+h4 {
+   font: 16px 'MuseoSans500', Arial, Helvetica, sans-serif;
+   padding: 0 0 6px 0;
+   color: #040404;
+}
+
+p, li {
+   font: 13px Arial, Helvetica, sans-serif;
+   color: #4D4D4D;
+}
+
+
+
+
+/* #### MAIN PAGE REGIONS LAYOUT STYLES #### */
+
+
+
+
+body {
+   background: url(images/bodyBg.jpg);
+}
+
+#header {
+   min-width: 960px;
+   height: 148px;
+   margin: 0 auto;
+   background: url(images/headerBg.png) -20% top repeat-x
+}
+
+#header.home {
+   height: 313px;
+   background: url(images/home_headerBg.png) -20% top repeat-x;
+}
+
+#mainContent {
+   width: 960px;
+   margin: 0 auto;
+}
+
+#footer {
+   height: 142px;
+   width: 890px;
+   padding: 22px 35px;
+   margin: 0 auto;
+   background: url(images/footerBg.png) center repeat-x;
+}
+
+
+
+/* #### HEADER SECTION STYLES #### */
+
+
+
+#headerContent {
+   width: 960px;
+   margin: 0 auto;
+   position: relative;
+   z-index: 1;
+}
+
+#headerContent > p {
+   padding-top: 16px;
+   font-weight: bold;
+   text-align: right;
+   color: #5f5129;
+}
+
+#headerContent > p a {
+   color: #5f5129;
+}
+
+#headerContent > p a:hover {
+   color: #3b3219;
+}
+
+#headerContent > h1 {
+   padding: 43px 0 0 205px;
+   color: #ffffff;
+}
+
+
+
+/* ==== HEADER NAVIGATION ==== */
+
+
+
+#nav {
+   width: 151px;
+   height: 340px;
+   position: absolute;
+   top: 0;
+   left: 20px;
+}
+
+#nav img {
+   position: absolute;
+   z-index: -1;
+}
+
+#nav ul {
+   margin-top: 179px;
+   background: transparent;
+   text-align: center;
+}
+
+#nav a {
+   display: block;
+   height: 36px;
+   margin: 0 22px;
+   border-bottom: 1px solid #787163;
+   font: 17px/38px 'MuseoSans500', Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   color: #ffffff;
+}
+
+
+
+/* dummy hover style */
+#nav a:hover, #nav a.current {
+   color: #aaa;
+}
+
+
+
+/* == HEADER SLIDER == */
+
+
+
+#sliderWrapper {
+   position: relative;
+   margin: 15px 0 0 0;
+   *
+   top: 15px;
+   height: 257px;
+   background: white;
+   border-radius: 5px;
+   z-index: -2;
+}
+
+#sliderWrapper .slide {
+   padding: 31px 0 0 202px;
+   position: relative;
+}
+
+#sliderWrapper .slide img {
+   position: absolute;
+   right: 10px;
+   top: 27px;
+   z-index: -1;
+}
+
+#sliderWrapper .slide h1 {
+   width: 400px;
+   padding: 0 0 10px 0;
+   color: #0280af;
+}
+
+#sliderWrapper .slide p {
+   width: 400px;
+   line-height: 1.53;
+   font-weight: bold;
+   color: #575757;
+}
+
+#sliderWrapper .slide a.button, #rightBlock .porfolioBlock a {
+   display: block;
+   width: 132px;
+   height: 36px;
+   margin: 13px 0 0 0;
+   font: 17px/34px 'MuseoSans500', Arial, Helvetica, sans-serif;
+   text-align: center;
+   letter-spacing: -.7px;
+   background: url(images/home_BannerButtonBg.png) left top no-repeat;
+   color: #ffffff;
+}
+
+#sliderWrapper .slide a.button:hover {
+   background-position: left bottom;
+}
+
+
+
+
+
+/* #### MAIN CONTENT STYLES #### */
+
+
+
+/* ===== LEFT BLOCK STYLES ===== */
+
+#leftBlock {
+   float: left;
+   width: 109px;
+   padding: 0 0 0 41px;
+}
+
+#leftBlock > a {
+   display: block;
+   margin: 205px 0 15px 0;
+   font: 20px/23px 'MuseoSans500', Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   text-align: center;
+   text-shadow: 2px 2px 1px white;
+   color: #006189;
+}
+
+#leftBlock.home > a {
+   margin: 40px 0 15px 0;
+}
+
+#leftBlock > a:hover, #leftBlock > a.current {
+   color: #0082b7;
+}
+
+#leftBlock > a:hover {
+   color: #003c55;
+}
+
+#leftBlock .linkBlock {
+   padding: 10px 0 0 0;
+}
+
+#leftBlock .linkBlock a {
+   display: block;
+   height: 25px;
+   margin: 5px 0 8px;
+   padding: 0 0 0 30px;
+   font: bold italic 12px/25px Georgia, serif;
+   color: #62542b;
+   background: url(images/socialLinks.png) left top no-repeat;
+}
+
+#leftBlock .linkBlock a.facebook {
+   background-position: left -25px;
+}
+
+#leftBlock .linkBlock a.linkedin {
+   background-position: left -50px;
+}
+
+
+
+/* ===== RIGHT BLOCK STYLES ===== */
+
+
+
+#rightBlock {
+   float: right;
+   width: 756px;
+}
+
+
+
+/* Right Block - #HOME# */
+
+
+
+#rightBlock .services {
+   float: left;
+   width: 200px;
+   height: 240px;
+   margin: 17px 10px 0 21px;
+   text-align: center;
+}
+
+#rightBlock .services a {
+
+}
+
+#rightBlock .services h2 {
+   padding: 13px 0 3px;
+   font: 24px 'MuseoSans500', Arial, Helvetica, sans-serif;
+   color: #006189;
+}
+
+#rightBlock .services h2 a {
+   color: #006189;
+}
+
+#rightBlock .services h2 a:hover,
+#rightBlock .services > a:hover ~ h2 a { 
+   color: #003c55;
+}
+
+#rightBlock .services p {
+   font-family: Tahoma, sans-serif;
+   line-height: 1.4;
+   color: #3A3A3A;
+}
+
+/* Right Block - #GENERAL# */
+
+
+
+#rightBlock.general {
+   width: 720px;
+   padding: 0 35px 0 0;
+}
+
+#rightBlock > h2, #rightBlock .formWrapper h2, #rightBlock .data h3 {
+   padding: 42px 0 6px 0;
+   border-bottom: 2px groove #fff;
+}
+
+#rightBlock > h3 {
+   padding: 22px 0 8px 0;
+   border-bottom: 2px groove #fff;
+}
+
+#rightBlock > p {
+   line-height: 20px;
+   padding: 17px 0 9px;
+   text-align: justify;
+   color: #4D4D4D;
+}
+
+#rightBlock > ul {
+   margin: 2px 15px 0 18px;
+}
+
+#rightBlock li {
+   list-style: disc;
+   padding: 3px 5px;
+   color: #4D4D4D;
+}
+
+#rightBlock img.alignright {
+   float: right;
+   margin: 25px 0 0 27px;
+}
+
+
+
+   
+/* Right Block - #PORTFOLIO# */
+
+
+
+#rightBlock .porfolioBlock {
+   padding: 26px 0 27px;
+   border-bottom: 2px groove #fff;
+}
+
+#rightBlock .porfolioBlock:first-child {
+   margin-top: 17px;
+}
+
+#rightBlock .porfolioBlock.last {
+   border: none;
+}
+
+#rightBlock .porfolioBlock h3 {
+   padding-bottom: 11px;
+   color: #001C2B;
+}
+
+#rightBlock .porfolioBlock p {
+   line-height: 20px;
+}
+
+#rightBlock .porfolioBlock img {
+   float: left;
+   margin-right: 21px;
+}
+
+#rightBlock .porfolioBlock a {
+   float: left;
+   height: 30px;
+   width: 108px;
+   margin-top: 19px;
+   font-size: 14px;
+   line-height: 28px;
+   background: url(images/portfolio_visitProject.png) left top no-repeat;
+}
+
+#rightBlock .porfolioBlock a:hover {
+   background-position: left bottom;
+}
+
+
+
+/* Right Block - #CONTACT US# */
+
+
+
+#rightBlock .formWrapper {
+   width: 475px;
+   float: left;
+   padding-bottom: 38px;
+}
+
+#rightBlock .formWrapper h2 {
+   margin-bottom: 12px;
+}
+
+#rightBlock label {
+   display: block;
+   float: left;
+   clear: left;
+   margin: 10px 0 9px;
+   height: 31px;
+   font: 12px/29px Arial, Helvetica, sans-serif;
+   color: #7a7a7a;
+}
+
+#rightBlock input, #rightBlock textarea {
+   float: right;
+   width: 338px;
+   height: 21px;
+   padding: 4px;
+   margin: 8px 0;
+   border: 1px solid #c9c9c9;
+   border-radius: 5px;
+   font: 13px Arial, Helvetica, sans-serif;
+   box-shadow: inset 0 2px 2px #ccc;
+}
+
+#rightBlock textarea {
+   width: 326px;
+   height: 103px;
+   padding: 10px;
+   resize: none;
+   resize: vertical;
+   outline: none;
+}
+
+#rightBlock input[type="submit"] {
+   clear: both;
+   width: 69px;
+   height: 32px;
+   font: 14px 'MuseoSans500', Arial, Helvetica, sans-serif;
+   text-align: center;
+   color: #ffffff;
+   background: url(images/contact_sendButton.png) left top no-repeat;
+   box-shadow: none;
+   cursor: pointer;
+}
+
+#rightBlock input[type="submit"]:hover {
+   background-position: left bottom;
+}
+
+#rightBlock .data {
+   float: right;
+   width: 230px;
+}
+
+#rightBlock .data p {
+   margin-top: 17px;
+   font-size: 14px;
+   line-height: 20px;
+}
+
+#rightBlock .data p a {
+   color: #2e94af;
+}
+
+#rightBlock .data p a:hover {
+   text-decoration: underline;
+}
+
+#rightBlock .data h3 {
+   border-bottom: 1px solid #c9c9c9;
+   padding-bottom: 5px;
+}
+
+
+
+
+
+
+/* #### FOOTER CONTENT #### */
+
+
+
+.footerBlock {
+   float: left;
+   width: 315px;
+}
+
+.footerBlock.last {
+   float: right;
+   width: 215px;
+}
+
+.footerBlock h4 > span, .footerBlock h4 > a {
+   color: #826a28;
+}
+
+.footerBlock h4 > a:hover {
+   color: #3b3219;
+}
+
+.footerBlock p {
+   padding: 4px 25px 4px 0;
+   font: 13px Arial, Helvetica, sans-serif;
+   color: #2c2c2c;
+}
+
+.footerBlock p.testimonials {
+   padding-right: 0;
+   line-height: 1.35;
+}
+
+.footerBlock.last p {
+   font: 18px/40px Georgia, serif;
+   text-align: right;
+   padding-right: 15px;
+   height: 50px;
+   background: url(images/footerPhone.png) left center no-repeat;
+}
+
+.footerBlock.last p strong {
+   color: #51472c;
+}
+
+.footerBlock p > a {
+   color: #027a9a;
+}
+
+.footerBlock p > a:hover {
+   text-decoration: underline;
+}
+
+.footerBlock.last p + p {
+   width: 208px;
+   height: 45px;
+   margin-top: 5px;
+   font-size: 17px;
+   line-height: 45px;
+   text-align: left;
+   padding: 0 0 0 10px;
+   background: url(images/footerEmail.png) left center no-repeat;
+}
+
+.footerBlock.last p + p a {
+   color: #227699;
+}
+
+.footerBlock.last p + p a:hover {
+   color: #003c55;
+   text-decoration: none;
+}
+
+
+
+/* MISCELLANEOUS STYLES - "CLEARFIX" */
+.floatGroup:before, .floatGroup:after {
+   content: "";
+   display: table;
+}
+
+.floatGroup:after {
+   clear: both;
+}
+
+.floatGroup {
+   zoom: 1;
+}
